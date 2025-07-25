@@ -1,11 +1,9 @@
 @import "tailwindcss";
-/* 
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 :root {
   --font-display: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-body: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --bg: #f5f5f7;        /* Background */
+  --bg: #f0f0ff;        /* Background */
   --cbg: #ffffff;       /* Card/Component background */
   --tc1: #000000;       /* Text color 1 (primary) */
   --tc2: #333333;       /* Text color 2 (secondary) */
@@ -32,7 +30,7 @@ body {
 
 h1 {
   font-family: var(--font-display);
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-optical-sizing: auto;
   font-weight: 800;
   line-height: 100%;
@@ -40,7 +38,7 @@ h1 {
 
 h2 {
   font-family: var(--font-display);
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-optical-sizing: auto;
   font-weight: 600;
 }
@@ -75,13 +73,72 @@ h6 {
 
 p {
   font-family: "Sora", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-optical-sizing: auto;
   font-weight: 300;
 }
 
 button {
   font-family: "Sora", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Marquee Animation CSS */
+
+.marquee-content {
+  display: inline-flex;
+  gap: 4rem;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.award-image {
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+@keyframes marquee-vertical-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+@keyframes marquee-vertical-up {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes marquee-horizontal {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee-vertical-down {
+  animation: marquee-vertical-down 20s linear infinite;
+}
+
+.animate-marquee-vertical-up {
+  animation: marquee-vertical-up 20s linear infinite;
+}
+
+.animate-marquee-horizontal {
+  animation: marquee-horizontal 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
