@@ -3,22 +3,22 @@ import reviews from "@/app/db/reviews";
 export default function Testimonials() {
   return (
     <div>
-      <h2 className="text-center">loved by millions</h2>
+      <h2 className="text-center">Loved by millions</h2>
 
       {/* Reviews Section */}
       <section className="bg-transparent py-12 px-4">
 
-        <div className="relative overflow-hidden max-h-[500px]">
+        <div className="relative overflow-hidden h-full md:max-h-[500px]">
           {/* Gradient overlays */}
           <div className="pointer-events-none absolute z-20 inset-0">
             {/* Top gradient */}
-            <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-[#f0f0ff] to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-0 md:h-40 bg-gradient-to-b from-[#f0f0ff] to-transparent"></div>
             {/* Bottom gradient */}
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#f0f0ff] to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full h-0 md:h-40 bg-gradient-to-t from-[#f0f0ff] to-transparent"></div>
             {/* Left gradient */}
-            <div className="absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-[#f0f0ff] to-transparent"></div>
+            <div className="absolute top-0 left-0 h-full w-10 md:w-30 bg-gradient-to-r from-[#f0f0ff] to-transparent"></div>
             {/* Right gradient */}
-            <div className="absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-[#f0f0ff] to-transparent"></div>
+            <div className="absolute top-0 right-0 h-full w-10 md:w-30 bg-gradient-to-l from-[#f0f0ff] to-transparent"></div>
           </div>
 
           {/* Marquee container */}
@@ -79,7 +79,9 @@ export default function Testimonials() {
               {/* Repeat as needed */}
             </div>
 
-            {/* Mobile (horizontal marquee) */}
+          </div>
+
+          {/* Mobile (horizontal marquee) */}
             <div className="flex flex-row gap-4">
                 <div className="flex md:hidden gap-4 animate-marquee-horizontal">
                 {[...reviews, ...reviews].map((review, i) => (
@@ -114,7 +116,6 @@ export default function Testimonials() {
                 </div>
             </div>
 
-          </div>
         </div>
       </section>
     </div>

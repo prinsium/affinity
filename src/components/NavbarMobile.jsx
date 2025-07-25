@@ -75,10 +75,10 @@ export default function NavbarMobile() {
         <div className="fixed inset-0 z-40 bg-white text-black pt-20 px-6 overflow-y-auto">
           <div className="flex flex-col gap-4">
             {/* CTA Buttons */}
-            <button className="w-full bg-black text-white py-3 rounded-md font-medium hover:opacity-90 transition">
+            <button className="w-full bg-[#0071e3] text-white py-3 rounded-md font-medium hover:bg-[#747fe2] transition">
               Sign Up
             </button>
-            <button className="w-full border py-3 rounded-md font-medium hover:bg-gray-100 transition">
+            <button className="w-full border border-[#0071e3] py-3 rounded-md font-medium hover:text-white hover:bg-[#0071e3] transition">
               Log In
             </button>
 

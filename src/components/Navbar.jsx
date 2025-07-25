@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="p-4 h-full w-full flex flex-row justify-between bg-gray-50 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border-b border-gray-300">
+    <div className="p-4 h-full w-full flex flex-row justify-between items-end bg-gray-50 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border-b border-gray-300">
       <div className="max-w-[75px] flex flex-row gap-2">
         <Link href="/">
         <svg
@@ -22,10 +22,12 @@ export default function Navbar() {
       </div>
 
       <ul className="flex flex-row gap-8">
-        <Link href="/pricing">Products</Link>
+        <Link className="text-[#134881]" href="/designer">Designer</Link>
+        <Link className="text-[#4e3188]"  href="/photo">Photo</Link>
+        <Link className="text-[#891b26]"  href="/publisher">Publisher</Link>
         <Link href="/pricing">Pricing</Link>
-        <Link href="/pricing">Marketplace</Link>
-        <Link href="/pricing">Learn</Link>
+        <Link href="/marketplace">Marketplace</Link>
+        <Link href="/learn">Learn</Link>
       </ul>
 
       <div className="flex flex-row gap-4 text-gray-950">

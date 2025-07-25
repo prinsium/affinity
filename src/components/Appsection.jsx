@@ -34,14 +34,14 @@ export default function Appsection(){
             <Image src="/proicon/publisher.svg" width={75} height={75} alt="publisher" />
         </div>
         <h6>Get Version 2 of Affinity Designer, Affinity Photo and Affinity Publisher <br/> on all operating systems, including iPad, macBook & desktops for one low bundle price.</h6>
-        <div className="flex flex-row gap-4 items-baselign">
-            <Image src="/proicon/apple.svg" width={15} height={15} alt="apple" />
-            <Image src="/proicon/windows.svg" width={15} height={15} alt="windows" />
+        <div className="flex flex-row gap-4 items-end">
+            <Image src="/proicon/apple.svg" width={10} height={10} alt="apple" />
+            <Image src="/proicon/windows.svg" width={10} height={10} alt="windows" />
             <p>Available on iPad, macBook & desktops</p>
         </div>
         <h5>All Apps, All Platforms, No Subscription</h5>
         <div className="flex flex-row gap-4 justify-start items-center">
-            <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#0071e3]">Buy Now</button>
+            <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#747fe2]">Buy Now</button>
             <button type="button" className="bg-transparent border-1 border-[#0071e3] text-black px-5 py-2 rounded-full hover:bg-[#1682EE] hover:text-white">Learn More</button>
         </div>
         </div>
@@ -52,7 +52,7 @@ export default function Appsection(){
 
         </div>
 
-        <div className="grid grid-rows-3 md:grid-cols-3 gap-8 justify-between m-8">
+        <div className="grid md:grid-cols-3 gap-8 justify-between m-8">
             {crd.map((item) => (
               <div key={item.id} className="rounded-2xl bg-[#ffffff] flex flex-col gap-6 items-center p-8">
                 <Image src={item.img} alt={item.title} width={75} height={75} />
@@ -64,7 +64,7 @@ export default function Appsection(){
                     <p className="text-center">for iPad, macBook & desktops</p>
                     </div>
                     <div className="flex flex-row md:flex-col lg:flex-row gap-4 justify-start items-center">
-                        <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#0071e3]">Buy Now</button>
+                        <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#747fe2]">Buy Now</button>
                         <button type="button" className="bg-transparent border-1 border-[#0071e3] text-black px-5 py-2 rounded-full hover:bg-[#1682EE] hover:text-white">Learn More</button>
                     </div>
                 </div>
