@@ -6,7 +6,7 @@ export default function Bottom(){
                 <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#747fe2]">Get Affinity</button>
             </div>
             <h2 className="text-center">Join the community</h2>
-            <div className="w-full flex flex-row gap-4 justify-center items-center my-8">
+            <div className="w-full flex flex-col md:flex-row gap-4 justify-center items-center my-8">
                 <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#747fe2]">Explore Marketplace</button>
                 <button type="button" className="bg-[#0071e3] text-white px-5 py-2 rounded-full hover:bg-[#747fe2]">Learn Affinity</button>
             </div>

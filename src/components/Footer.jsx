@@ -56,7 +56,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <div className="m-8 p-8 rounded-2xl bg-[#ffffff]">
+    <div className="m-3 p-3 md:m-8 md:p-8 rounded-2xl bg-[#ffffff]">
       <div className="relative z-10 flex flex-row">
         <div className="w-full flex flex-col md:flex-row justify-between">
           {footerLinks.map((section) => (

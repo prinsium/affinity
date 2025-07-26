@@ -25,7 +25,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-20 md:mt-0">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center my-12">
@@ -33,14 +33,14 @@ const Pricing = () => {
           <h6 className='text-[#333333] my-4'>Professional creative tools without the subscription</h6>
 
           {/* Platform & Customer Selection */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             {/* Platform Selection */}
-            <div className="flex gap-2 p-1 bg-white/10 backdrop-blur-sm rounded-full border border-[#2f2f2f]/20">
+            <div className="flex gap-1 p-1 bg-white/10 backdrop-blur-sm rounded-full border border-[#2f2f2f]/20">
               {platformOptions.map((option) => (
                 <button
                   key={option.value}
                   onClick={() => setSelectedPlatform(option.value)}
-                  className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                  className={`px-4 py-2 rounded-full transition-all duration-300 ${
                     selectedPlatform === option.value
                       ? 'bg-white text-[#333333] shadow-lg'
                       : 'text-[#333333] hover:bg-white/10'
@@ -52,12 +52,12 @@ const Pricing = () => {
             </div>
 
             {/* Customer Selection */}
-            <div className="flex gap-2 p-1 bg-white/10 backdrop-blur-sm rounded-full border border-[#2f2f2f]/20">
+            <div className="flex gap-1 p-1 bg-white/10 backdrop-blur-sm rounded-full border border-[#2f2f2f]/20">
               {customerOptions.map((option) => (
                 <button
                   key={option.value}
                   onClick={() => setSelectedCustomer(option.value)}
-                  className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                  className={`px-4 py-2 rounded-full transition-all duration-300 ${
                     selectedCustomer === option.value
                       ? 'bg-white text-[#333333] shadow-lg'
                       : 'text-[#333333] hover:bg-white/10'
